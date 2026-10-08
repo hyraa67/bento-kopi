@@ -17,13 +17,19 @@ function tabs(container, labels, onSelect) {
   });
   onSelect(labels[0]);
 }
-
 function renderMenu(cat) {
-  $("menuList").innerHTML = MENU[cat].map((m) =>
-    `<li><div><h3>${m.name}</h3><p>${m.desc || ""}</p></div>${m.price ? `<span>${rupiah(m.price)}</span>` : ""}</li>`
-  ).join("");
+  $("menuList").innerHTML = MENU[cat]
+    .map((m) => `
+      <li>
+        ${m.image ? `<img src="${m.image}" alt="${m.name}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; margin-right: 12px;">` : ""}
+        <div>
+          <h3>${m.name}</h3>
+          <p>${m.desc || ""}</p>
+        </div>
+        ${m.price ? `<span>${rupiah(m.price)}</span>` : ""}
+      </li>
+    `).join("");
 }
-
 function renderOutlets(city) {
   $("outletList").innerHTML = OUTLETS.filter((o) => o.city === city).map((o) =>
     `<li><h3>${o.name}</h3><p>${o.address || "Alamat segera tersedia"}</p>` +
