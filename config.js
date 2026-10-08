@@ -36,7 +36,7 @@ const MENU = {
       desc: "Espresso dan air",          
       price: 16000,
       image: "assets/image/americano.jpg"
-    }
+    },
      { 
       name: "Americano",      
       desc: "Espresso dan air",          
