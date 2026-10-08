@@ -8,7 +8,7 @@ const SITE = {
 
   // Foto hero. Taruh file di assets/images/ lalu isi nama file-nya.
   // Contoh: "assets/images/hero.jpg". Kosongkan untuk blok warna polos.
-  heroImage: "",
+  heroImage: "assets/image/katti😒.jpg",
 
   // WhatsApp: format internasional tanpa + dan 0 di depan. Contoh: "6281234567890"
   whatsapp: "",
