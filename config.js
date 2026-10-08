@@ -29,7 +29,7 @@ const MENU = {
       name: "Kopi Susu",      
       desc: "Espresso, susu, gula aren", 
       price: 18000,
-      image: "assets/image/kopi-susu.jpg"
+      image: "assets/image/download.jpg"
     },
     { 
       name: "Americano",      
