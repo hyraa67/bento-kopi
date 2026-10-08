@@ -24,12 +24,28 @@ const SITE = {
    price dalam rupiah (angka saja). Hapus "price" jika tidak ingin menampilkan harga. */
 const MENU_NOTE = "Menu dan harga dapat berbeda di tiap outlet.";
 const MENU = {
-  "Kopi":      [{ name: "Kopi Susu",      desc: "Espresso, susu, gula aren", price: 18000 },
-                { name: "Americano",      desc: "Espresso dan air",          price: 16000 }],
-  "Non-kopi":  [{ name: "Matcha Latte",   desc: "Matcha dan susu",           price: 20000 },
-                { name: "Teh Lemon",      desc: "Teh seduh dan lemon",       price: 12000 }],
-  "Makanan":   [{ name: "Kentang Goreng", desc: "Garing, dengan saus",       price: 15000 },
-                { name: "Roti Bakar",     desc: "Pilihan isian manis",       price: 17000 }]
+  "Kopi": [
+    { 
+      name: "Kopi Susu",      
+      desc: "Espresso, susu, gula aren", 
+      price: 18000,
+      image: "assets/image/kopi-susu.jpg"
+    },
+    { 
+      name: "Americano",      
+      desc: "Espresso dan air",          
+      price: 16000,
+      image: "assets/image/americano.jpg"
+    }
+  ],
+  "Non-kopi": [
+    { 
+      name: "Matcha Latte",   
+      desc: "Matcha dan susu",           
+      price: 20000,
+      image: "assets/image/matcha-latte.jpg"
+    }
+  ]
 };
 
 /* OUTLET — satu baris per outlet. "maps" = link Google Maps outlet (boleh kosong). */
